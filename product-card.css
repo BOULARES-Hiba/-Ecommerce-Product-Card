@@ -22,24 +22,87 @@ body::after{
 .product{
     max-width: 750px;
     z-index: 1;
-    max-width: 750px;
+    
     background: #fff;
     border-radius: 12px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
     position: relative;
 }
-
+.product::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height:100%;
+    clip-path: circle(65% at right 10%);
+    background: #e6e6e6;
+    background-image: linear-gradient( to right,  #fd9bb0 35%, #F6416C 100%);
+}
 .camera{
-    width:450px;
-    top: -120px;
+    width:475px;
+    top: -40px;
     right: -10px;
     position: absolute;
 }
 .descr{
-    width: 45%;
-    font-size: 13px;
+    width: 41%;
+    font-size: 12px;
+    color:darkgray;
+    line-height :18px;
 }
 .title{
-    font-size: 22px;
+    font-size: 25px;
     font-weight: 500;
+}
+.info{
+    padding-left: 25px;
+    padding-top: 20px;
+}
+.ratings{
+    margin-top: 10px;
+}
+#icon{
+    font-size: 19px;
+    color: #fd9bb0 ;
+}
+#icon2{
+    font-size: 19px;
+    color: #fd9bb0;
+}
+.old-price{
+    text-decoration: line-through;
+    font-size: 20px;
+    color: #737373;
+    margin: 10px;
+}
+.new-price{
+    font-size: 28px;
+    color: #fd9bb0;
+    margin-top: 18px;
+    font-weight: 500;
+}
+.main-info{
+    position: absolute;
+    bottom: 0;
+    right:0px;
+}
+.add-button{
+    margin-top:80px ;
+    outline: none;
+    border:none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    background: #00e6e6;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+.add-button:hover{
+    background-color: #fd9bb0;
+}
+.cart-box{
+    position: relative;
+    bottom: 35px;
+    left: 35px
 }
